@@ -1,0 +1,6 @@
+📦 Installing dependencies...
+Usage:
+  ./run-scan.sh api               # Run API server
+  ./run-scan.sh cli <URL>         # Run interactive CLI scan
+  ./run-scan.sh once <URL>        # Run one-off scan and exit
+  ./run-scan.sh test              # Run tests (cucumber + unit)

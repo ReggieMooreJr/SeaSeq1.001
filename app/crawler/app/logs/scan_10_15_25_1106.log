@@ -1,0 +1,14 @@
+⚡ Running one-off scan on https://wwsad.b12sites.com/index...
+/Users/reginaldmoore/Library/Mobile Documents/com~apple~CloudDocs/Code/Python_Examples/PythonExample/mcp_site_scanner.py:221: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  fetched_time = datetime.datetime.utcnow().isoformat() + "Z"
+Running oneoff scan of - mcp_site_scanner.py:370 https://wwsad.b12sites.com/index
+Summary: - mcp_site_scanner.py:372 {
+  "total_links": 32,
+  "broken_links": 0,
+  "forms_detected": 1,
+  "add_member_attempts": 1
+}
+Report written to - mcp_site_scanner.py:373 reports/report.html
+✅ Report created: reports/REPORT_10_15_25_1106.html
+🕒 Duration: 9s
+📘 Logs saved in: logs/scan_10_15_25_1106.log

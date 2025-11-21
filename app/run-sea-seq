@@ -1,0 +1,84 @@
+#!/bin/bash
+
+# Sea-Seq Run Script
+
+# Exit on any error
+set -e
+
+# Logging function
+log() {
+    echo "[Sea-Seq] $1"
+}
+
+# Default configuration
+TEST_LOCATION=""
+MODE="cli"
+VERBOSE=false
+
+# Help function
+usage() {
+    echo "Usage: ./run-sea-seq [OPTIONS]"
+    echo ""
+    echo "Options:"
+    echo "  -l, --location     Specify the test location (required)"
+    echo "  -m, --mode         Execution mode: cli, docker, or api (default: cli)"
+    echo "  -v, --verbose      Enable verbose output"
+    echo "  -h, --help         Display this help message"
+    exit 1
+}
+
+# Parse command-line arguments
+PARSED_ARGUMENTS=$(getopt -a --name run-sea-seq -o l:m:vh --long location:,mode:,verbose,help -- "$@")
+VALID_ARGUMENTS=$?
+[ $VALID_ARGUMENTS -ne 0 ] && usage
+
+eval set -- "$PARSED_ARGUMENTS"
+while :
+do
+    case "$1" in
+        -l | --location)  TEST_LOCATION="$2"; shift 2 ;;
+        -m | --mode)      MODE="$2"; shift 2 ;;
+        -v | --verbose)   VERBOSE=true; shift ;;
+        -h | --help)      usage ;;
+        --) shift; break ;;
+        *) echo "Unexpected option: $1"; usage ;;
+    esac
+done
+
+# Validate required arguments
+if [ -z "$TEST_LOCATION" ]; then
+    log "Error: Test location is required"
+    usage
+fi
+
+# Verbose logging
+if [ "$VERBOSE" = true ]; then
+    set -x
+fi
+
+# Execute based on mode
+case "$MODE" in
+    cli)
+        log "Running Sea-Seq in CLI mode"
+        # Call Python scripts for CLI execution
+        python3 reporting_service.py resolve-location "$TEST_LOCATION"
+        python3 runner.py execute-tests
+        ;;
+    
+    docker)
+        log "Running Sea-Seq in Docker mode"
+        docker-compose up --build
+        ;;
+    
+    api)
+        log "Starting Sea-Seq API service"
+        python3 -m flask run --host=0.0.0.0
+        ;;
+    
+    *)
+        log "Invalid mode: $MODE"
+        usage
+        ;;
+esac
+
+log "Sea-Seq execution completed successfully"

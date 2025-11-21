@@ -1,0 +1,8 @@
+Usage:
+Usage:
+Usage:
+⚡ Running one-off scan on https://mojoconsultants.wordpress.com/...
+./run-scan.sh: line 77: python: command not found
+⚠️  No report file detected — check logs for details.
+🕒 Duration: 0s
+📘 Logs saved in: logs/scan_10_15_25_1158.log

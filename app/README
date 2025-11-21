@@ -1,0 +1,30 @@
+# 🌊 SEA-SEQ — Shift-Left Endpoint Assurance & Security
+
+**SEA-SEQ** is a unified **API testing, validation, and lightweight security scanning platform** that combines:
+
+- ✅ **Functional testing** of APIs  
+- 🔐 **OpenAPI contract validation**  
+- 🧪 **Coverage tracking**  
+- 🧷 **Embedded pentesting**  
+- 🌐 **Site metadata scraping**
+
+SEA-SEQ runs as a **CLI**, **API service**, or **standalone Docker workflow**, making it perfect for local testing and full CI/CD pipelines.
+
+---
+
+## 🚀 Features
+
+| Capability | Description |
+|-------------|-------------|
+| **Language-agnostic testing** | Define test suites in YAML — no SDK lock-in |
+| **Contract enforcement** | Validate responses against OpenAPI specs |
+| **Parallel execution** | Multi-threaded test runs with fail-fast mode |
+| **Security hooks** | Integrate pentests, missing header checks, TLS probes |
+| **Site metadata crawler** | Pre-scan target websites for SEO/security metadata |
+| **CI-Ready artifacts** | HTML, JSON, and JUnit reports with timestamps |
+| **Multi-mode operation** | CLI / API / Dashboard in one container |
+
+---
+
+## 🧩 Project Structure
+

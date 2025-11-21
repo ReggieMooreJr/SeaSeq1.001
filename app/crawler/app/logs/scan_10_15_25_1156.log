@@ -1,0 +1,5 @@
+🔍 Running interactive CLI scan on https://wwsad.b12sites.com/index...
+./run-scan.sh: line 68: python: command not found
+⚠️  No report file detected — check logs for details.
+🕒 Duration: 1s
+📘 Logs saved in: logs/scan_10_15_25_1156.log

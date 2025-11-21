@@ -1,0 +1,106 @@
+🧪 Running cucumber + unit tests...
+USING RUNNER: behave.runner:Runner
+Feature: Website Scan # tests/features/steps/tests/features/site_scan.feature:1
+
+  Scenario: Run scan on a known site                # tests/features/steps/tests/features/site_scan.feature:2
+    Given I have a target URL "https://example.com" # tests/features/steps/site_scan_steps.py:5
+    When I run the scanner once                     # tests/features/steps/site_scan_steps.py:9
+⚡ Running one-off scan on https://example.com...
+/Users/reginaldmoore/Desktop/demo-ready1/mojo_scrape/mcp_site_scanner.py:221: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  fetched_time = datetime.datetime.utcnow().isoformat() + "Z"
+Running oneoff scan of - mcp_site_scanner.py:370 https://example.com
+Summary: - mcp_site_scanner.py:372 {
+  "total_links": 1,
+  "broken_links": 0,
+  "forms_detected": 0,
+  "add_member_attempts": 5
+}
+Report written to - mcp_site_scanner.py:373 reports/report.html
+✅ Report created: reports/REPORT_10_15_25_1248.html
+🕒 Duration: 2s
+📘 Logs saved in: logs/scan_10_15_25_1248.log
+    Then a report file should be created            # tests/features/steps/site_scan_steps.py:15
+
+1 feature passed, 0 failed, 0 skipped
+1 scenario passed, 0 failed, 0 skipped
+3 steps passed, 0 failed, 0 skipped
+Took 0min 2.328s
+============================= test session starts ==============================
+platform darwin -- Python 3.13.5, pytest-8.4.2, pluggy-1.6.0
+rootdir: /Users/reginaldmoore/Desktop/demo-ready1/mojo_scrape
+plugins: mock-3.15.1, anyio-4.11.0, cov-7.0.0
+collected 1 item
+
+tests/unit/test_scanner.py ⚡ Running one-off scan on https://example.com...
+/Users/reginaldmoore/Desktop/demo-ready1/mojo_scrape/mcp_site_scanner.py:221: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  fetched_time = datetime.datetime.utcnow().isoformat() + "Z"
+Running oneoff scan of - mcp_site_scanner.py:370 https://example.com
+Summary: - mcp_site_scanner.py:372 {
+  "total_links": 1,
+  "broken_links": 0,
+  "forms_detected": 0,
+  "add_member_attempts": 5
+}
+Report written to - mcp_site_scanner.py:373 reports/report.html
+✅ Report created: reports/REPORT_10_15_25_1248.html
+🕒 Duration: 3s
+📘 Logs saved in: logs/scan_10_15_25_1248.log
+.                                             [100%]
+
+============================== 1 passed in 2.69s ===============================
+✅ Report created: reports/REPORT_10_15_25_1248.html
+🕒 Duration: 5s
+📘 Logs saved in: logs/scan_10_15_25_1248.log
+🧪 Running cucumber + unit tests...
+USING RUNNER: behave.runner:Runner
+Feature: Website Scan # tests/features/steps/tests/features/site_scan.feature:1
+
+  Scenario: Run scan on a known site                # tests/features/steps/tests/features/site_scan.feature:2
+    Given I have a target URL "https://example.com" # tests/features/steps/site_scan_steps.py:5
+    When I run the scanner once                     # tests/features/steps/site_scan_steps.py:9
+⚡ Running one-off scan on https://example.com...
+/Users/reginaldmoore/Desktop/demo-ready1/mojo_scrape/mcp_site_scanner.py:221: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  fetched_time = datetime.datetime.utcnow().isoformat() + "Z"
+Running oneoff scan of - mcp_site_scanner.py:370 https://example.com
+Summary: - mcp_site_scanner.py:372 {
+  "total_links": 1,
+  "broken_links": 0,
+  "forms_detected": 0,
+  "add_member_attempts": 5
+}
+Report written to - mcp_site_scanner.py:373 reports/report.html
+✅ Report created: reports/REPORT_10_15_25_1248.html
+🕒 Duration: 2s
+📘 Logs saved in: logs/scan_10_15_25_1248.log
+    Then a report file should be created            # tests/features/steps/site_scan_steps.py:15
+
+1 feature passed, 0 failed, 0 skipped
+1 scenario passed, 0 failed, 0 skipped
+3 steps passed, 0 failed, 0 skipped
+Took 0min 2.261s
+============================= test session starts ==============================
+platform darwin -- Python 3.13.5, pytest-8.4.2, pluggy-1.6.0
+rootdir: /Users/reginaldmoore/Desktop/demo-ready1/mojo_scrape
+plugins: mock-3.15.1, anyio-4.11.0, cov-7.0.0
+collected 1 item
+
+tests/unit/test_scanner.py ⚡ Running one-off scan on https://example.com...
+/Users/reginaldmoore/Desktop/demo-ready1/mojo_scrape/mcp_site_scanner.py:221: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  fetched_time = datetime.datetime.utcnow().isoformat() + "Z"
+Running oneoff scan of - mcp_site_scanner.py:370 https://example.com
+Summary: - mcp_site_scanner.py:372 {
+  "total_links": 1,
+  "broken_links": 0,
+  "forms_detected": 0,
+  "add_member_attempts": 5
+}
+Report written to - mcp_site_scanner.py:373 reports/report.html
+✅ Report created: reports/REPORT_10_15_25_1248.html
+🕒 Duration: 2s
+📘 Logs saved in: logs/scan_10_15_25_1248.log
+.                                             [100%]
+
+============================== 1 passed in 2.02s ===============================
+✅ Report created: reports/REPORT_10_15_25_1248.html
+🕒 Duration: 5s
+📘 Logs saved in: logs/scan_10_15_25_1248.log

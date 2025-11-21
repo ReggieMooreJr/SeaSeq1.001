@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Security Report - October 2025</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  h1, h2 {
+    color: #004085;
+    border-bottom: 2px solid #004085;
+    padding-bottom: 10px;
+    margin-top: 0;
+  }
+  .summary {
+    background-color: #e6f7ff;
+    border: 1px solid #b3e0ff;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+  }
+  .summary-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #004085;
+  }
+  .finding-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  .finding-table th, .finding-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  .finding-table th {
+    background-color: #f0f4f7;
+    font-weight: bold;
+    color: #555;
+  }
+  .critical, .high, .medium, .low {
+    font-weight: bold;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  .critical { background-color: #d9534f; }
+  .high { background-color: #f0ad4e; }
+  .medium { background-color: #5bc0de; }
+  .low { background-color: #5cb85c; }
+  .status {
+    font-style: italic;
+    color: #666;
+  }
+  .recommendations {
+    background-color: #f9f9f9;
+    border-left: 4px solid #004085;
+    padding: 15px;
+    margin-top: 15px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Website Security Report - October 2025</h1>
+  <p class="status">Report Date: October 28, 2025 | Target: YourCompany.com</p>
+
+  <div class="summary">
+    <p class="summary-text">Summary of Findings</p>
+    <p>This report provides an overview of the security health of YourCompany.com. We found **one critical risk** and **one high-priority risk** that require immediate attention. Overall, the system has several areas for improvement, but the most severe issues are detailed below with clear recommendations for resolution.</p>
+  </div>
+
+  <h2>Key Security Issues</h2>
+  <table class="finding-table">
+    <thead>
+      <tr>
+        <th>Risk Level</th>
+        <th>Issue Summary</th>
+        <th>Business Impact</th>
+        <th>Action Required</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="critical">Critical</span></td>
+        <td>**Unprotected Customer Data:** A technical error allows unauthorized access to customer records, including names and email addresses.</td>
+        <td>Serious data privacy breach, potential for legal penalties, and significant brand damage.</td>
+        <td>**Immediate Action:** Block the access point and notify security team.</td>
+      </tr>
+      <tr>
+        <td><span class="high">High</span></td>
+        <td>**Vulnerable Login System:** The user login page is susceptible to attack, potentially allowing a malicious actor to log in as a regular user.</td>
+        <td>Potential account takeovers, unauthorized access to user-specific information.</td>
+        <td>**Urgent Action:** Update the login system to prevent this type of attack.</td>
+      </tr>
+      <tr>
+        <td><span class="medium">Medium</span></td>
+        <td>**Outdated Website Software:** The website uses an older version of its content management system (CMS).</td>
+        <td>Minor security gaps exist that could be exploited in the future.</td>
+        <td>**Recommended Action:** Schedule an update to the latest CMS version within 30-60 days.</td>
+      </tr>
+      <tr>
+        <td><span class="low">Low</span></td>
+        <td>**Missing Security Headers:** Some security headers are not configured on the web server.</td>
+        <td>Slightly increases the risk of certain client-side attacks (e.g., cross-site scripting).</td>
+        <td>**Suggested Action:** Configure recommended security headers during the next system maintenance cycle.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Next Steps and Recommendations</h2>
+  <div class="recommendations">
+    <p>Based on our findings, we recommend the following actions:</p>
+    <ul>
+      <li>**Critical Issues:** Prioritize and resolve all Critical-level findings within the next **48 hours**.</li>
+      <li>**High Issues:** Address all High-level findings within the next **2 weeks**.</li>
+      <li>**Medium Issues:** Plan to address Medium-level findings within the next **30-60 days**.</li>
+      <li>**Ongoing:** We suggest a follow-up scan after the issues are addressed to verify they have been fixed correctly.</li>
+    </ul>
+  </div>
+
+  <p>For more technical details, please consult with your engineering or IT team. For questions regarding the business impact, please contact the security team.</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+🧪 Running cucumber + unit tests...
+USING RUNNER: behave.runner:Runner
+ConfigError: No steps directory in '/Users/reginaldmoore/Desktop/demo-ready1/mojo_scrape/tests/features'
+ERROR: file or directory not found: tests/unit
+
+============================= test session starts ==============================
+platform darwin -- Python 3.13.5, pytest-8.4.2, pluggy-1.6.0
+rootdir: /Users/reginaldmoore/Desktop/demo-ready1/mojo_scrape
+plugins: mock-3.15.1, anyio-4.11.0, cov-7.0.0
+collected 0 items
+
+============================ no tests ran in 0.01s =============================
+⚠️  No report file detected — check logs for details.
+🕒 Duration: 0s
+📘 Logs saved in: logs/scan_10_15_25_1230.log

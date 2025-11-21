@@ -1,0 +1,66 @@
+🧪 Running cucumber + unit tests...
+USING RUNNER: behave.runner:Runner
+Feature: Website Scan # tests/features/steps/tests/features/site_scan.feature:1
+
+  Scenario: Run scan on a known site                # tests/features/steps/tests/features/site_scan.feature:2
+    Given I have a target URL "https://example.com" # tests/features/steps/site_scan_steps.py:5
+    When I run the scanner once                     # tests/features/steps/site_scan_steps.py:9
+⚡ Running one-off scan on https://example.com...
+run-scan.sh: line 77: python: command not found
+⚠️  No report file detected — check logs for details.
+🕒 Duration: 0s
+📘 Logs saved in: logs/scan_10_15_25_1235.log
+    Then a report file should be created            # tests/features/steps/site_scan_steps.py:15
+      ASSERT FAILED: Report file not found
+
+
+
+Failing scenarios:
+  tests/features/steps/tests/features/site_scan.feature:2  Run scan on a known site
+
+0 features passed, 1 failed, 0 skipped
+0 scenarios passed, 1 failed, 0 skipped
+2 steps passed, 1 failed, 0 skipped
+Took 0min 0.324s
+============================= test session starts ==============================
+platform darwin -- Python 3.13.5, pytest-8.4.2, pluggy-1.6.0
+rootdir: /Users/reginaldmoore/Desktop/demo-ready1/mojo_scrape
+plugins: mock-3.15.1, anyio-4.11.0, cov-7.0.0
+collected 1 item
+
+tests/unit/test_scanner.py ⚡ Running one-off scan on https://example.com...
+run-scan.sh: line 77: python: command not found
+⚠️  No report file detected — check logs for details.
+🕒 Duration: 1s
+📘 Logs saved in: logs/scan_10_15_25_1235.log
+F                                             [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_report_generated _____________________________
+
+tmp_path = PosixPath('/private/var/folders/wd/1ywkxdcd0x3cn3t_yjlphbxh0000gn/T/pytest-of-reginaldmoore/pytest-1/test_report_generated0')
+
+    def test_report_generated(tmp_path):
+        """Ensure report.html is produced when scanner runs once."""
+        cmd = ["bash", "run-scan.sh", "once", "https://example.com"]
+        subprocess.run(cmd, check=False)
+>       assert os.path.exists("reports/report.html"), "Expected report.html not found"
+E       AssertionError: Expected report.html not found
+E       assert False
+E        +  where False = <function exists at 0x1009e2b60>('reports/report.html')
+E        +    where <function exists at 0x1009e2b60> = <module 'posixpath' (frozen)>.exists
+E        +      where <module 'posixpath' (frozen)> = os.path
+
+tests/unit/test_scanner.py:8: AssertionError
+----------------------------- Captured stdout call -----------------------------
+⚡ Running one-off scan on https://example.com...
+run-scan.sh: line 77: python: command not found
+⚠️  No report file detected — check logs for details.
+🕒 Duration: 1s
+📘 Logs saved in: logs/scan_10_15_25_1235.log
+=========================== short test summary info ============================
+FAILED tests/unit/test_scanner.py::test_report_generated - AssertionError: Ex...
+============================== 1 failed in 0.34s ===============================
+⚠️  No report file detected — check logs for details.
+🕒 Duration: 2s
+📘 Logs saved in: logs/scan_10_15_25_1235.log

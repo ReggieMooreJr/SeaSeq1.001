@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEA-SEQ Wave Report - October 2025</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  h1, h2 {
+    color: #004085;
+    border-bottom: 2px solid #004085;
+    padding-bottom: 10px;
+    margin-top: 0;
+  }
+  .summary {
+    background-color: #e6f7ff;
+    border: 1px solid #b3e0ff;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+  }
+  .summary-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #004085;
+  }
+  .finding-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .finding-table th, .finding-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  .finding-table th {
+    background-color: #f0f4f7;
+    font-weight: bold;
+    color: #555;
+  }
+  .critical, .high, .medium, .low {
+    font-weight: bold;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  .critical { background-color: #d9534f; }
+  .high { background-color: #f0ad4e; }
+  .medium { background-color: #5bc0de; }
+  .low { background-color: #5cb85c; }
+  .status {
+    font-style: italic;
+    color: #666;
+  }
+  .recommendations {
+    background-color: #f9f9f9;
+    border-left: 4px solid #004085;
+    padding: 15px;
+    margin-top: 15px;
+  }
+  .ai-links {
+    margin-top: 25px;
+    padding: 15px;
+    background: #eef6ff;
+    border: 1px solid #b3d7ff;
+    border-radius: 8px;
+  }
+  .ai-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #004085;
+  }
+  .chatbot-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+<<<<<<< HEAD
+<<<<<<< HEAD
+  <h1>SEA-SEQ Wave Report - October 2025</h1>
+  <p class="status">Report Date: October 28, 2025 | Target: Quantium Diligence.com</p>
+=======
+  <h1>SEA-SEQ Wave Report - October 2025 🌊</h1>
+  <p class="status">Report Date: October 28, 2025 | T🌊 arget: DemoCompany.com</p>
+>>>>>>> f1a4115 (Add detailed SEA-SEQ Wave Report with security findings and recommendations)
+=======
+  <h1>SEA-SEQ Wave Report - October 2025</h1>
+  <p class="status">Report Date: October 28, 2025 | Target: Quantium Diligence.com</p>
+>>>>>>> cfb27df (spelling correction on report)
+
+  <div class="summary">
+    <p class="summary-text">Summary of Findings</p>
+    <p>Dummy data report showing how SEA-SEQ highlights different risk tiers with contextual business impacts and recommended actions.</p>
+  </div>
+
+  <h2>Key Security Issues</h2>
+  <table class="finding-table">
+    <thead>
+      <tr>
+        <th>Timestamp</th>
+        <th>Page URL</th>
+        <th>Risk Level</th>
+        <th>Risk Score</th>
+        <th>Pattern</th>
+        <th>Issue Summary</th>
+        <th>Business Impact</th>
+        <th>Action Required</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2025-10-28 10:00</td>
+        <td>https://demo.com/index</td>
+        <td><span class="critical">Critical</span></td>
+        <td>9</td>
+        <td>Data Exposure</td>
+        <td>Unprotected customer database accessible without authentication.</td>
+        <td>Severe financial and reputational damage risk.</td>
+        <td>Block access immediately and notify data protection officer.</td>
+      </tr>
+      <tr>
+        <td>2025-10-28 10:10</td>
+        <td>https://demo.com/login</td>
+        <td><span class="high">High</span></td>
+        <td>7</td>
+        <td>Auth Bypass</td>
+        <td>Weak session validation allows attackers to hijack accounts.</td>
+        <td>Unauthorized account access and data leakage risk.</td>
+        <td>Patch login system and enforce MFA.</td>
+      </tr>
+      <tr>
+        <td>2025-10-28 10:20</td>
+        <td>https://demo.com/products</td>
+        <td><span class="medium">Medium</span></td>
+        <td>5</td>
+        <td>Outdated CMS</td>
+        <td>CMS version 3.2 in use; several known CVEs exist.</td>
+        <td>Moderate exploitation risk if unpatched.</td>
+        <td>Upgrade to CMS 4.0 within 60 days.</td>
+      </tr>
+      <tr>
+        <td>2025-10-28 10:30</td>
+        <td>https://demo.com/contact</td>
+        <td><span class="low">Low</span></td>
+        <td>2</td>
+        <td>Headers Missing</td>
+        <td>X-Frame-Options and CSP headers not configured.</td>
+        <td>Minor exposure to clickjacking or XSS vectors.</td>
+        <td>Configure headers during next scheduled maintenance.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Next Steps and Recommendations</h2>
+  <div class="recommendations">
+    <ul>
+      <li><b>Critical:</b> Resolve less than 2 hours.</li>
+      <li><b>High:</b> Fix within  less than 8 hours - 24 hours depending on difficulty. </li>
+      <li><b>Medium:</b> Plan fixes within 30–60 days.</li>
+      <li><b>Low:</b> Address in next release cycle.</li>
+    </ul>
+  </div>
+
+  <div class="ai-links">
+    <p><b>Need more help?</b></p>
+    <a href="https://chat.openai.com/" target="_blank"> Ask ChatGPT</a>
+    <a href="https://demo.com/chatbot" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png" class="chatbot-icon" alt="Chatbot"/> Chat with our AI Assistant
+    </a>
+  </div>
+</div>
+
+</body>
+</html>

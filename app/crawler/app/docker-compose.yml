@@ -1,0 +1,38 @@
+# =============================================================================
+# FILE: docker-compose.yml
+# PURPOSE: Define container orchestration for the MCP Site Scanner service
+# -----------------------------------------------------------------------------
+# 📖 DEVELOPER NOTES — READ LIKE SCRIPTURE
+# 1. This file declares the composition of truth — one scanner, one report home.
+# 2. Volumes ensure reports persist across rebuilds.
+# 3. Simplicity reigns: a single service, portable anywhere.
+# =============================================================================
+
+version: "3.9"
+
+services:
+  mcp-scanner:
+    container_name: mcp-scanner
+    image: mcp-scanner:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8020:8020"             # Expose API on host:port
+    volumes:
+      - ./reports:/app/reports  # Mount reports for persistence
+    environment:
+      - TARGET_SITE_URL=https://wwsad.b12sites.com/index
+    command: ["bash", "run-scan.sh", "api"]
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  VOLUMES SECTION — Store generated HTML reports and logs outside container
+# ─────────────────────────────────────────────────────────────────────────────
+volumes:
+  reports:
+
+# =============================================================================
+#  END OF docker-compose.yml
+# =============================================================================
+# --- IGNORE ---  
+

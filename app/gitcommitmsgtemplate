@@ -1,0 +1,26 @@
+feat(docs): add SEA-SEQ v1.2.0 — Security Annotated Edition
+
+# Summary
+Added standardized inline documentation and embedded security best practices 
+across core SEA-SEQ execution files for improved clarity, onboarding, and operational safety.
+
+# Details
+- Added versioned headers with author (@reggiemoorejr) and metadata to:
+  - pentest_runner.py
+  - gettoken.go
+  - genid.go
+  - Dockerfile
+  - reset-sea-seq.sh
+  - destroydata.sh
+  - cleanupscript.sh
+  - shutdown.sh
+- Introduced “--- Security Note ---” comment blocks highlighting secure coding,
+  credential handling, and Docker hygiene best practices.
+- Updated changelog.md with v1.2.0 release entry.
+- Ensured consistency in comment style (`### SECTION:` / `### STEP:`).
+
+# Notes
+Version: SEA-SEQ v1.2.0 — Security Annotated Edition
+Author: @reggiemoorejr
+Date: 2025-10-13
+Tag: v1.2.0
